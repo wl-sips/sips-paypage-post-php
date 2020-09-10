@@ -1,7 +1,7 @@
 <?php
 /*This file generates the payment request and sends it to the Sips server
 For more information on this use case, please refer to the following documentation:
-https://documentation.sips.worldline.com/en/WLSIPS.004-GD-Functionality-set-up-guide.html */
+https://documentation.sips.worldline.com/en/WLSIPS.004-GD-Functionality-set-up-guide.html#Payment-in-instalments */
 
 session_start();
 
@@ -23,7 +23,7 @@ $requestData = array(
    "currencyCode" => "978",
    "keyVersion" => "1",
    "responseEncoding" => "base64",
-   
+
    "transactionReference" => "m136",
    "paymentPattern" => "INSTALMENT",
    "instalmentData" => array(
