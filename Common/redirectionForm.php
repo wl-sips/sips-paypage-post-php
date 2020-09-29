@@ -14,7 +14,7 @@ session_start();
    <title>Redirection Form</title>
 </head>
 <body>
-   <form id = "form" method = "POST" action = "https://payment-webinit.simu.sips-atos.com/paymentInit">
+   <form id = "form" method = "POST" action = "https://payment-webinit.simu.sips-services.com/paymentInit">
       <input type = "hidden" name = "Data" value = "<?php echo  $_SESSION['data']; ?>"/>
       <input type = "hidden" name = "InterfaceVersion" value = "HP_2.24"/>
       <input type = "hidden" name = "Seal" value = "<?php echo  $_SESSION['seal']; ?>"/>
